@@ -1,5 +1,3 @@
-cd path/to/your/trignometric_calculator
-
 #include <iostream>
 #include <cmath>
 
@@ -10,25 +8,8 @@ double DegreesToRadians(double degrees);
 
 
 int main() {
-  //  double number;
-    //char type;
-    //double result;
     double result;
     std::cout << "this is a trignometry calculator!" << '\n';
-    /*std::cout << "entering your number" << '\n';
-    std::cin >> number;
-    std::cout << "entering R for Radians / D for Degrees" << '\n';
-    std::cin >> type;
-    switch (type){
-        case 'R': 
-            result = Rcalculation(number);
-            break;
-        case 'D':
-            result = Rcalculation(DegreesToRadians(number));
-            break;
-        default: 
-            std::cout << "please enter R for Radians or D for Degrees ONLY" << '\n';
-    }*/
     result = getResult();
     if ( result == -999.0 ){
         std::cout << "sorry, your operation request is invalid. " << '\n';
